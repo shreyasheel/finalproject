@@ -1,6 +1,6 @@
 /* PAGE A */
 
-body {
+/*body {
   overflow: scroll;
   margin-left: 0px;
   font-family: Lora;
@@ -86,7 +86,7 @@ h3 {
 .profile-name {
   font-size: 25px;
   font-family: Lora;
-}
+}*/
 
 
 
@@ -94,7 +94,7 @@ h3 {
 
 
 /*Back button */
-#back {
+/*#back {
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
@@ -109,7 +109,7 @@ a:hover {
   background-color: #2874A6;
   color: white;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
+}*/
 
 
 

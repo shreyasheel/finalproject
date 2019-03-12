@@ -21,25 +21,10 @@
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="/js/analytics.js"></script>
 
-
-<!-- Google Analytics Content Experiment code -->
-<script>function utmx_section(){}function utmx(){}(function(){var
-k='190559575-1',d=document,l=d.location,c=d.cookie;
-if(l.search.indexOf('utm_expid='+k)>0)return;
-function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-</script><script>utmx('url','A/B');</script>
-<!-- End of Google Analytics Content Experiment code -->
 	
 </head>
 
-{{#if viewAlt}}
+
 <body>
 
 	<div class="topnav">
@@ -47,15 +32,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
         <p>Search Results</p>
     </div>
 
+
 	<div class="container">
-
-		<!--
-		<div class="back">
-			<a href="/search" id="back" class="previous">&laquo; Back</a>
-		</div>
-		-->
-
-		
 
 
 	    <hgroup class="mb20">
@@ -88,47 +66,11 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 	            
 	        </div>
 		</div>
-
-
-
 		{{/each}}
 
-{{else}}
-<body>
-	<div class="topnav">
-		<button onclick = "location.href='/search'" class="btn-back" id="back"> < </button>
-        <p>Search Results</p>
-    </div>
-
-	<div class="container">
-
-		<!--
-
-		<div class="back">
-			<a href="/search" id="back" class="previous">&laquo; Back</a>
-		</div>
-
-		<h1>Search Results</h1>
-
-	-->
-<br><br>
-		<div class="mentor-container">
-			{{#each mentors}}
-			<div class="mentors" >
-				<a href="/{{profile}}"><img src="{{imageURL}}" class="img-responsive"></a>
-				<p><h3><strong>{{name}}</strong></h3></p>
-				<p>{{job}}</p>
-				<p>{{company}}</p>
-				<p>{{location}}</p>
-			</div>
-			<br><br>
-			{{/each}}
-		</div>
-
-{{/if}}
 
 <br><br><br><br><br>
-		</div>
+
 
 
 </div>
